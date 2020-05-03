@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/admin"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/add_upcoming_events"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/artist_name"/>
+
+        <EditText
+            android:id="@+id/edittext_artist"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Location:"/>
+
+        <EditText
+            android:id="@+id/edittext_location"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Ticket Release Date:"/>
+
+        <EditText
+            android:id="@+id/edittext_ticketsout"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/event_date"/>
+
+        <EditText
+            android:id="@+id/edittext_eventdate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/submit"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="view"
+        android:textSize="25sp" />
+</LinearLayout>
+
+
+</LinearLayout>
